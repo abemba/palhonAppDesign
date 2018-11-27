@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4z_3YOMCEeilTcmA1V_5aA" name="palhon-design-phase2">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_5PpRkOMCEeilTcmA1V_5aA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Md4oEOMDEeilTcmA1V_5aA" name="Client"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_O4JrEOMDEeilTcmA1V_5aA" name="Add a debit card">
+    <include xmi:type="uml:Include" xmi:id="__tE8cO3hEeiBkJyp8tvHTg" addition="__qjM4O3hEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kqLM8OMDEeilTcmA1V_5aA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_CCUysOMEEeilTcmA1V_5aA" name="Create a Transaction"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_JlqBQOMEEeilTcmA1V_5aA" name="withdraw cash from debit">
+    <extend xmi:type="uml:Extend" xmi:id="_siQbcO3jEeiBkJyp8tvHTg" extendedCase="_RmmiwO3iEeiBkJyp8tvHTg" extensionLocation="_siSQoO3jEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Pk4YwOMEEeilTcmA1V_5aA" name="borrow cash">
+    <include xmi:type="uml:Include" xmi:id="_AQQz8O3gEeiBkJyp8tvHTg" addition="_1Y4hwOMKEeidfIQh29xGbA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_TBY74OMEEeilTcmA1V_5aA" name="pickup cash">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HOGpIOMGEeilTcmA1V_5aA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_JBKiMeMGEeilTcmA1V_5aA" name="ExtensionPoint2"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_UAldIOMGEeilTcmA1V_5aA" name="ExtensionPoint3"/>
+    <include xmi:type="uml:Include" xmi:id="_7VAeEO3jEeiBkJyp8tvHTg" addition="_1Y4hwOMKEeidfIQh29xGbA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XCtcQOMEEeilTcmA1V_5aA" name="request cash delivery">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ElJC0OMGEeilTcmA1V_5aA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_KVsFIOMGEeilTcmA1V_5aA" name="ExtensionPoint2"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_VVEj0OMGEeilTcmA1V_5aA" name="ExtensionPoint3"/>
+    <include xmi:type="uml:Include" xmi:id="_JxFp8O3gEeiBkJyp8tvHTg" addition="_1Y4hwOMKEeidfIQh29xGbA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_iXgxUOMEEeilTcmA1V_5aA" name="delete card">
+    <extend xmi:type="uml:Extend" xmi:id="_MLSesO3kEeiBkJyp8tvHTg" extendedCase="_RmmiwO3iEeiBkJyp8tvHTg" extensionLocation="_MLUT4O3kEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QWi0UOMGEeilTcmA1V_5aA" name="view transaction"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3zQ2UOMGEeilTcmA1V_5aA" name="change default debit card">
+    <extend xmi:type="uml:Extend" xmi:id="_Ro1XYO3iEeiBkJyp8tvHTg" extendedCase="_RmmiwO3iEeiBkJyp8tvHTg" extensionLocation="_Ro1-cO3iEeiBkJyp8tvHTg"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_68QAgOMGEeilTcmA1V_5aA" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9pebwOMGEeilTcmA1V_5aA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_A4KlUOMHEeilTcmA1V_5aA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DBUDIOMHEeilTcmA1V_5aA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ev2BgOMHEeilTcmA1V_5aA"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wLpA0OMKEeidfIQh29xGbA" name="Agent"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1Y4hwOMKEeidfIQh29xGbA" name="updateMyCurrentLocation">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_LLBYYOMLEeidfIQh29xGbA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_M3p5UOMLEeidfIQh29xGbA" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_92sbkOMKEeidfIQh29xGbA" name="ClientPhone"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_BeQYIOMLEeidfIQh29xGbA" name="AgentPhone"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3OBpAOMLEeidfIQh29xGbA" name="updateMyCurrentLocationIntervals"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9IzlYOMLEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NbMZUOMNEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LwWLoOMOEeidfIQh29xGbA" name="searchForTransaction"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_P6GPQOMOEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Vs1C4OMOEeidfIQh29xGbA" name="processDebitTransaction">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sxsd8OMUEeidfIQh29xGbA" name="ExtensionPoint2"/>
+    <include xmi:type="uml:Include" xmi:id="_cZbL0OMQEeidfIQh29xGbA" addition="_-HTtoOMOEeidfIQh29xGbA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Y5pkMOMOEeidfIQh29xGbA" name="processLoanTransaction">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_n7OeQOMUEeidfIQh29xGbA" name="ExtensionPoint2"/>
+    <include xmi:type="uml:Include" xmi:id="_ZGVDYOMQEeidfIQh29xGbA" addition="_-HTtoOMOEeidfIQh29xGbA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-HTtoOMOEeidfIQh29xGbA" name="checkTransactionAuthorizationStatus"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KWtCsOMPEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wqYjkOMQEeidfIQh29xGbA" name="DATABASE"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_z6H2AOMQEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_29IUAOMQEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_v-lYEOMREeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zFjwEOMREeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_F9QO0OMSEeidfIQh29xGbA" name="pick Cash Agent">
+    <include xmi:type="uml:Include" xmi:id="_LAZYkOMSEeidfIQh29xGbA" addition="_K-1SUOMSEeidfIQh29xGbA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_K-1SUOMSEeidfIQh29xGbA" name="notify the agent"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_N_ltkOMSEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pTBpkOMSEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vEElsOMTEeidfIQh29xGbA" name="AutomatedDeliveryDispatcher"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_B3UpUOMUEeidfIQh29xGbA" name="checkDelayedOrders"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_b4ByIOMUEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_j4iPcOMVEeidfIQh29xGbA" name="checkForIncomingClients"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uKdyQOMVEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GtussOMWEeidfIQh29xGbA" name="checkForAssignedDeliveryOrders"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SDd14OMWEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UEddQOMWEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XAtzAOMWEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2ESt4OMYEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_odgSoOMZEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sO-ZIOMZEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PhAjYOMaEeidfIQh29xGbA" name="updayePersonalInformation"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WKHlYOMaEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_epu2AOMaEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vWNaYOMaEeidfIQh29xGbA" name="changeCurrentAvailability"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2GVqYOMaEeidfIQh29xGbA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5yLC8OMaEeidfIQh29xGbA" name="updateDeliveryStatus"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ATKDsOMbEeidfIQh29xGbA" name="updateMethodOfDelivery"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DJ_t8OMbEeidfIQh29xGbA" name="updateSchedule"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HSzWYOMbEeidfIQh29xGbA" name="updateBankInformation"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_LHOqQOMbEeidfIQh29xGbA" name="updatePayoutDate"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VukcYOMbEeidfIQh29xGbA" name="updateProfileInformation"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_rGbXoO3YEeiBkJyp8tvHTg" name="cancelDeliveryOrder">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HJ5pcO3ZEeiBkJyp8tvHTg" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_YVYeAO3ZEeiBkJyp8tvHTg" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tjjhYO3YEeiBkJyp8tvHTg" name="cancelCashOrder">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_KFw9oO3ZEeiBkJyp8tvHTg" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_XInv8O3ZEeiBkJyp8tvHTg" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AqDRIO3ZEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DU4fsO3ZEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vY5YwO3gEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wut8MO3gEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yzZJsO3gEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0RhUkO3gEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-GHbIO3gEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IonwkO3hEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NFwDMO3hEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZpVfkO3hEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i2ytoO3hEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vHPLkO3hEeiBkJyp8tvHTg" name="Payment API"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zx0rYO3hEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_108ZsO3hEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__qjM4O3hEeiBkJyp8tvHTg" name="invalidCard"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_RmmiwO3iEeiBkJyp8tvHTg" name="noDebitCardOnRecord">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Ro1-cO3iEeiBkJyp8tvHTg" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_siSQoO3jEeiBkJyp8tvHTg" name="ExtensionPoint2"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_MLUT4O3kEeiBkJyp8tvHTg" name="ExtensionPoint3"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8R4LcO3iEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__yxfUO3iEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C4RQoO3jEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FgP_gO3jEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IprOkO3jEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KWri8O3jEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NsJC4O3jEeiBkJyp8tvHTg"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_gSONgO7xEeinf4V63CfEvg" name="withdraw from different card"/>
+</uml:Model>

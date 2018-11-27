@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Y4YvsO4hEeiBkJyp8tvHTg" name="class-diagrams-4-case-deleteCard">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ZJj_QO4hEeiBkJyp8tvHTg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aL3w0O4hEeiBkJyp8tvHTg" name="Client">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1sWqUO4hEeiBkJyp8tvHTg" name="id" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XKfOAO4iEeiBkJyp8tvHTg" name="cards" type="_bT0QUO4hEeiBkJyp8tvHTg" aggregation="composite" association="_XKaVgO4iEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XKf1EO4iEeiBkJyp8tvHTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XKgcIO4iEeiBkJyp8tvHTg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ysubAO4iEeiBkJyp8tvHTg" name="cards" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8eRpEO4sEeiBkJyp8tvHTg" name="removeCard"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bT0QUO4hEeiBkJyp8tvHTg" name="Card">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jYc1IO4hEeiBkJyp8tvHTg" name="number" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pmMw0O4hEeiBkJyp8tvHTg" name="expirationDate" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sKOz0O4hEeiBkJyp8tvHTg" name="dateAdded" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_t_eeMO4hEeiBkJyp8tvHTg" name="security" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4Sla0e4jEeiBkJyp8tvHTg" name="owner" type="_RhgW0O4jEeiBkJyp8tvHTg" aggregation="composite" association="_4SkMsO4jEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Sla0u4jEeiBkJyp8tvHTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4SmB4O4jEeiBkJyp8tvHTg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ar7rYO4kEeiBkJyp8tvHTg" name="owner"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cKYE4O4hEeiBkJyp8tvHTg" name="DeleteCardController">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bjXycu4lEeiBkJyp8tvHTg" name="client" type="_aL3w0O4hEeiBkJyp8tvHTg" aggregation="composite" association="_bjXLYO4lEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bjYZgO4lEeiBkJyp8tvHTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bjYZge4lEeiBkJyp8tvHTg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iDQxku4mEeiBkJyp8tvHTg" name="&lt;&lt;boundary>>deleteconfirmationmessage" type="_NONqwO4lEeiBkJyp8tvHTg" association="_iDPjcO4mEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iDRYoO4mEeiBkJyp8tvHTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iDRYoe4mEeiBkJyp8tvHTg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BBSTgu4oEeiBkJyp8tvHTg" name="&lt;&lt;boundary>>nocardonrecordmessage" type="_1UCpQO4nEeiBkJyp8tvHTg" association="_BBRscO4oEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BBSTg-4oEeiBkJyp8tvHTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BBSThO4oEeiBkJyp8tvHTg" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4Nz6cO4hEeiBkJyp8tvHTg" name="getAllCards"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7slHYO4hEeiBkJyp8tvHTg" name="deleteCard"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XKaVgO4iEeiBkJyp8tvHTg" memberEnd="_XKfOAO4iEeiBkJyp8tvHTg _XKgcIe4iEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XKdY0O4iEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XKdY0e4iEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XKgcIe4iEeiBkJyp8tvHTg" name="client" type="_aL3w0O4hEeiBkJyp8tvHTg" association="_XKaVgO4iEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RhgW0O4jEeiBkJyp8tvHTg" name="CardOwner">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Mube0O4iEeiBkJyp8tvHTg" name="firstName" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ptxk0O4iEeiBkJyp8tvHTg" name="lastName" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SXvl0O4kEeiBkJyp8tvHTg" name="address"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Wn5MYO4kEeiBkJyp8tvHTg" name="address" type="_gqV-MO4jEeiBkJyp8tvHTg" aggregation="composite" association="_Wn3-QO4kEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wn5MYe4kEeiBkJyp8tvHTg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wn5MYu4kEeiBkJyp8tvHTg" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gqV-MO4jEeiBkJyp8tvHTg" name="Address">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WoFPEO4jEeiBkJyp8tvHTg" name="streetName" visibility="public"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KkcBkO4kEeiBkJyp8tvHTg" name="streetNumber"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MMxRUO4kEeiBkJyp8tvHTg" name="postalCode"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OCjHMO4kEeiBkJyp8tvHTg" name="city"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_O-YdUO4kEeiBkJyp8tvHTg" name="province"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_P5ezoO4kEeiBkJyp8tvHTg" name="country"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4SkMsO4jEeiBkJyp8tvHTg" memberEnd="_4Sla0e4jEeiBkJyp8tvHTg _4SmB4e4jEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4SkzwO4jEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4Sla0O4jEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4SmB4e4jEeiBkJyp8tvHTg" name="card" type="_bT0QUO4hEeiBkJyp8tvHTg" association="_4SkMsO4jEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Wn3-QO4kEeiBkJyp8tvHTg" memberEnd="_Wn5MYO4kEeiBkJyp8tvHTg _Wn5MY-4kEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wn4lUO4kEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wn4lUe4kEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Wn5MY-4kEeiBkJyp8tvHTg" name="cardowner" type="_RhgW0O4jEeiBkJyp8tvHTg" association="_Wn3-QO4kEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DrWNYO4lEeiBkJyp8tvHTg" name="&lt;&lt;Boundary>> CardsListWindow">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_R8bQ4O4mEeiBkJyp8tvHTg" name="deletecardcontroller" type="_cKYE4O4hEeiBkJyp8tvHTg" aggregation="composite" association="_R8aCwO4mEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R8bQ4e4mEeiBkJyp8tvHTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R8bQ4u4mEeiBkJyp8tvHTg" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rOOhwO4lEeiBkJyp8tvHTg" name="getCardList"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kk3j8O4sEeiBkJyp8tvHTg" name="showCards"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1w7AQO4sEeiBkJyp8tvHTg" name="cardsListReady"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ISqWwO4lEeiBkJyp8tvHTg" name="&lt;&lt;Boundary>>DeleteCardButton">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i8UEAu4nEeiBkJyp8tvHTg" name="deletecardcontroller" type="_cKYE4O4hEeiBkJyp8tvHTg" association="_i8Tc8O4nEeiBkJyp8tvHTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i8UrEO4nEeiBkJyp8tvHTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i8UrEe4nEeiBkJyp8tvHTg" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_vawzoO4lEeiBkJyp8tvHTg" name="delete"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NONqwO4lEeiBkJyp8tvHTg" name="&lt;&lt;Boundary>>DeleteConfirmationMessage">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_o2piMO4sEeiBkJyp8tvHTg" name="seeMessage"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bjXLYO4lEeiBkJyp8tvHTg" memberEnd="_bjXycu4lEeiBkJyp8tvHTg _bjYZgu4lEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bjXycO4lEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bjXyce4lEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bjYZgu4lEeiBkJyp8tvHTg" name="deletecardcontroller" type="_cKYE4O4hEeiBkJyp8tvHTg" association="_bjXLYO4lEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_R8aCwO4mEeiBkJyp8tvHTg" memberEnd="_R8bQ4O4mEeiBkJyp8tvHTg _R8bQ4-4mEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R8ap0O4mEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R8ap0e4mEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_R8bQ4-4mEeiBkJyp8tvHTg" name="&lt;&lt;boundary>> cardslistwindow" type="_DrWNYO4lEeiBkJyp8tvHTg" association="_R8aCwO4mEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iDPjcO4mEeiBkJyp8tvHTg" memberEnd="_iDQxku4mEeiBkJyp8tvHTg _iDRYou4mEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iDQxkO4mEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iDQxke4mEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iDRYou4mEeiBkJyp8tvHTg" name="deletecardcontroller" type="_cKYE4O4hEeiBkJyp8tvHTg" association="_iDPjcO4mEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i8Tc8O4nEeiBkJyp8tvHTg" memberEnd="_i8UEAu4nEeiBkJyp8tvHTg _i8UrEu4nEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i8UEAO4nEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i8UEAe4nEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_i8UrEu4nEeiBkJyp8tvHTg" name="&lt;&lt;boundary>>deletecardbutton" type="_ISqWwO4lEeiBkJyp8tvHTg" association="_i8Tc8O4nEeiBkJyp8tvHTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1UCpQO4nEeiBkJyp8tvHTg" name="&lt;&lt;Boundary>>NoCardOnRecordMessage">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_I9lbsO4oEeiBkJyp8tvHTg" name="showMessage"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BBRscO4oEeiBkJyp8tvHTg" memberEnd="_BBSTgu4oEeiBkJyp8tvHTg _BBS6kO4oEeiBkJyp8tvHTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BBSTgO4oEeiBkJyp8tvHTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BBSTge4oEeiBkJyp8tvHTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BBS6kO4oEeiBkJyp8tvHTg" name="deletecardcontroller" type="_cKYE4O4hEeiBkJyp8tvHTg" association="_BBRscO4oEeiBkJyp8tvHTg"/>
+  </packagedElement>
+</uml:Model>
